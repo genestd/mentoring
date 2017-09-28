@@ -7,8 +7,9 @@ export function increment() {
   });
 }
 
-export function decrement() {
+export function decrement(amount) {
   return ({
     type: DECREMENT,
+    payload: amount,
   });
 }
